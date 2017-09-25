@@ -1,34 +1,7 @@
-# `import CryptoError`
+# CryptoError
 
-![Swift 3.0](https://img.shields.io/badge/Swift-3.0-ee4f37.svg)
-![Licence : MIT](https://img.shields.io/badge/Licence-MIT-000000.svg)
-[![Build Status](https://travis-ci.org/alexaubry/CryptoError.svg?branch=master)](https://travis-ci.org/alexaubry/CryptoError)
+This project is deprecated and will no longer be maintained.
 
-A Swift tool to get the latest error in the OpenSSL error stack.
+🔐  If you are looking for an alternative cryptography library for server-side Swift, please use [ServerCrypto](https://github.com/alexaubry/ServerCrypto).
 
-## Installation
-
-This library is only available via the Swift Package Manager. To include it in your package, add this line to your `Package.swift` :
-
-~~~swift
-.Package(url: "https://github.com/alexaubry/CryptoError", majorVersion: 1)
-~~~
-
-## Usage
-
-Call `CryptoError.latest()` to get the latest error.
-
-### Properties
-
-- `code` : The code of the error.
-- `localizedDescription` : The description of the error.
-
-### Example
-
-~~~swift
-if EVP_MD_CTX_create() == nil {
-    let error = CryptoError.latest()
-    print(error.code)
-    print(error.localizedDescription)
-}
-~~~
+To access the last commit of code, checkout to the [history](https://github.com/alexaubry/CryptoError/tree/history) branch.
